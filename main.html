@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Khang Phan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  	
+
+ 
+</head>
+<body id="bd">
+	
+  	
+  <div class="background">
+      <div class="shape"></div>
+      <div class="shape"></div>
+  </div>
+
+
+   <div class="wrapper">
+   	<button id="dark" class="fas fa-sun"></button>
+   	<button id="light" class="fas fa-moon"></button>
+
+
+     <div class="img-area">
+       <div class="inner-area">
+         <img src=" https://steamuserimages-a.akamaihd.net/ugc/921422132710338389/535681C355055E29D99CC3FA4B30263C1175C2B2/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="">
+       </div>
+     </div>
+
+
+     <div class="name">Phan Duy Khang</div>
+     <div class="about">
+       <p>  Tôi Là 1 Python Deverloper</p>
+       <p>Đang sinh sống và học tập tại </p><span class="fas fa-location-dot"><span> Mỏ Cày Nam, Bến Tre</span>
+  </div>
+     <div class="social-icons">
+     	       <a href=" https://www.tiktok.com/@khangphan.27" class="insta"><i id="tik" class="fab fa-tiktok"></i></a> 
+       <a href=" https://youtube.com/channel/UCqsI-q4Y49OyZhkx5FymxGA" class="gl"><i class="fab fa-youtube"></i></a>
+       <a href=" https://www.facebook.com/khang.phan27.info" class="facebook"><i class="fab fa-facebook"></i></a>
+       <a href=" https://www.instagram.com/khangphan.27" class="insta"><i class="fab fa-instagram"></i></a> 
+       <a href=" https://www.github.com/khangphan27" class="yt"><i id="git" class="fab fa-github"></i></a>
+
+
+     </div>
+     <div class="buttons">
+       <button class="tt" id="popup-btn">Thông Tin </button>
+<div class="popup">
+<div class="popup-content">
+<span class="close-btn">&times;</span>
+
+<div id="info">
+	<p id="tag" class="fas fa-tag"></p>
+Thông tin
+	<br>
+	<p class="fas fa-male"></p> : Phan Duy Khang
+	<br>
+<p class="fas fa-birthday-cake"></p> : 27/11/2008
+
+<br>
+<p class="fas fa-location-dot"></p> : Mỏ Cày Nam, Bến Tre
+    <br>
+ <p class="fas fa-phone"></p> : 0941606976
+	<br>
+		 
+		<hr>
+   <p id="pj" class="fas fa-project-diagram"></p> Project
+		<br>
+		
+		<i class="fab fa-github"></i>
+		 <a href="https://www.github.com/KhangPhan27/covid19 "><span>Covid 19 </span>
+	<br>
+		<i class="fab fa-github"></i>
+		<a href="https://www.github.com/KhangPhan27/Doanso"><span>Thuật Toán Đoán Số</span>
+	<br>
+		<i class="fab fa-github"></i>
+		<a href=" https://github.com/KhangPhan27/ddos"><span>DDoS 4 Method</span>
+	<br>
+ </div>
+    </div>  
+</div>
+</div>
+    </body>
+    </html>
+
+
+
+<script>
+	let modalBtn = document.getElementById("popup-btn");
+let modal = document.querySelector(".popup");
+let closeBtn = document.querySelector(".close-btn");
+// Hiển thị popup khi nhấp chuột vào button
+modalBtn.onclick = function(){
+modal.style.display = "block"
+
+}
+// Đóng popup khi ấn vào nút đóng
+closeBtn.onclick = function(){
+modal.style.display = "none"
+
+}
+
+
+let light = document.getElementById("light");
+let content = document.querySelector("#bd");
+let dark = document.querySelector("#dark");
+let name = document.querySelector(".name");
+let about = document.querySelector(".about")
+let tik = document.querySelector("#tik")
+let git = document.querySelector("#git")
+let tt = document.querySelector(".tt")
+// Hiển thị popup khi nhấp chuột vào button
+light.onclick = function(){
+content.style.backgroundColor= "#080710"
+light.style.display= "none"
+dark.style.display="block"
+name.style.color="white"
+about.style.color="white"
+tt.style.color="white"
+tik.style.color="white"
+git.style.color="white"
+}
+
+
+dark.onclick = function(){
+content.style.backgroundColor= "white"
+dark.style.display= "none"
+light.style.display="block"
+name.style.color="#080710"
+about.style.color=" #080710"
+tt.style.color="#080710"
+tik.style.color=" #080710"
+git.style.color=" #080710"
+}
+
+	</script>
